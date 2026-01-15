@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://shiftbloom.studio">
-    <img src="https://via.placeholder.com/150x150/111111/FFFFFF?text=SB" alt="shiftbloom studio logo" width="120" height="120" />
+    <img src=["https://via.placeholder.com/150x150/111111/FFFFFF?text=SB](https://shiftbloom.studio/logo.png)" alt="shiftbloom studio logo" width="120" height="120" />
   </a>
   
   <h1>shiftbloom studio.</h1>
@@ -75,5 +75,5 @@ Beyond open source, we partner with clients to build digital products that matte
 ---
 
 <div align="center">
-  <sub>© 2025 shiftbloom studio. Born with passion in Hamburg ❤️.</sub>
+  <sub>© 2026 shiftbloom studio. Born with passion in Hamburg ❤️.</sub>
 </div>
