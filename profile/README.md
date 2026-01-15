@@ -59,7 +59,7 @@ We believe in giving back to the developer ecosystem. Here are some of the tools
 | **[birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading)** | 🎂 A capability-adaptive progressive enhancement toolkit for React & Next.js. Loads heavy features only when the device can handle them. | `TypeScript` `React` |
 | **[symphony-state](https://github.com/shiftbloom-studio/symphony-state)** | 🎻 An orchestrator that synchronizes multiple state sources (Server, Client, Local) without creating a "global monster store." | `TypeScript` `State` |
 | **[circadian-ui](https://github.com/shiftbloom-studio/circadian-ui)** | 🌗 A theme system that automatically adjusts colors and contrast based on time of day and user context. | `UI/UX` `React` |
-| **[open-hallucination-index-api](https://github.com/shiftbloom-studio/open-hallucination-index-api)** | 🤖 A toolkit for measuring factual consistency and mitigating generation errors in GenAI architectures. | `Python` `AI Safety` |
+| **[open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index)** | 🤖 A toolkit for measuring factual consistency and mitigating generation errors in GenAI architectures. | `Python` `AI Safety` |
 
 ---
 
