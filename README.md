@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://shiftbloom.studio">
-    <img src=["https://via.placeholder.com/150x150/111111/FFFFFF?text=SB](https://shiftbloom.studio/logo.png)" alt="shiftbloom studio logo" width="120" height="120" />
+    <img src="https://shiftbloom.studio/logo.png" alt="shiftbloom studio logo" width="120" height="120" />
   </a>
   
   <h1>shiftbloom studio.</h1>
