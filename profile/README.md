@@ -63,16 +63,6 @@ We believe in giving back to the developer ecosystem. Here are some of the tools
 
 ---
 
-### 🚀 Services
-
-Beyond open source, we partner with clients to build digital products that matter.
-
-* **Web Development:** Full-stack solutions with Next.js & React. Focus on SEO, performance, and scalability.
-* **Modular Development:** Custom modules in Python, C#, or Node.js to solve specific business problems.
-* **Photography & Visuals:** High-end editorial, fashion, and portrait photography to give your brand a face.
-* **Coaching:** 1:1 training for teams in Frontend Development and Scrum.
-
----
 
 <div align="center">
   <sub>© 2026 shiftbloom studio. Born with passion in Hamburg ❤️.</sub>
