@@ -2,70 +2,50 @@
 
 This document tracks one GitHub Projects (v2) board per public product repository.
 
-Status: Project creation is currently blocked in this environment because the GitHub CLI is not authenticated for the signed-in user, so organization Projects (v2) cannot be created or updated here. See “Next steps” below.
+Status: **blocked on auth**. No project URLs are listed because none were created. Do not treat any invented URL as valid.
+
+## Exact auth error
+
+Checked in this Cloud Agent run (`bc-fff60de3-2771-431c-8db3-da4853e03cc2`):
+
+1. `GH_TOKEN` is **not present** in the process environment (`GH_TOKEN` unset, `GITHUB_TOKEN` unset).
+2. `gh` is logged in as the GitHub App integration user `cursor` / GraphQL `viewer.login` = `cursor[bot]`.
+3. `gh project list --owner shiftbloom-studio` succeeds and returns `{"projects":[],"totalCount":0}`.
+4. `gh project create --owner shiftbloom-studio --title birthday-cake-loading` fails with:
+
+```
+GraphQL: cursor[bot] does not have permission to create projects on ownerId O_kgDODST3CQ. (createProjectV2)
+```
+
+That is the same org owner for every repo below. No boards were created. No issue items were added.
 
 ## Per-repository status
 
-- birthday-cake-loading — Blocked (no org Project v2 created). Open issues: 9
-- voxcpm2-api — Blocked (no org Project v2 created). Open issues: 7
-- open-hallucination-index — Blocked (no org Project v2 created). Open issues: 8
-- symphony-state — Blocked (no org Project v2 created). Open issues: 11
-- circadian-ui — Blocked (no org Project v2 created). Open issues: 8
-- va-dispatcher — Blocked (no org Project v2 created). Open issues: 6
-- myosotis — Blocked (no org Project v2 created). Open issues: 6
-- what-does-grok-know — Blocked (no org Project v2 created). Open issues: 6
-- axiom-llm-training-framework — Blocked (no org Project v2 created). Open issues: 7
-- openai-privacy-filter-api — Blocked (no org Project v2 created). Open issues: 6
-- omnisuite — Blocked (no org Project v2 created). Open issues: 5
-- npm-package-template — Blocked (no org Project v2 created). Open issues: 5
+| Repo | Project URL | Open issues (counted) | Result |
+| --- | --- | --- | --- |
+| [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | — | 9 | Auth/API error: `cursor[bot]` cannot create org projects (`createProjectV2`) |
+| [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | — | 7 | Same org-level `createProjectV2` permission error; not attempted after first failure |
+| [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | — | 8 | Same |
+| [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | — | 11 | Same |
+| [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | — | 8 | Same |
+| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | — | 6 | Same |
+| [myosotis](https://github.com/shiftbloom-studio/myosotis) | — | 6 | Same |
+| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | — | 6 | Same |
+| [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | — | 7 | Same |
+| [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | — | 6 | Same |
+| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | — | 5 | Same |
+| [npm-package-template](https://github.com/shiftbloom-studio/npm-package-template) | — | 5 | Same |
 
-## What was intended
+## What still needs to happen (once a user PAT is in *this* VM)
 
-For each repository:
-1) Create an organization-owned Project (v2) titled exactly after the repo (e.g., “birthday-cake-loading”).
-2) Ensure the built-in Status field has: Todo, In Progress, Done.
-3) Associate the repository to the project (org-level Projects v2 support host repos).
-4) Add all currently open issues from that repository to the project in “Todo”.
+For each repo:
 
-## Why blocked here
+1. Create or reuse an org Project v2 titled exactly after the repo.
+2. Keep the built-in Status field with Todo / In Progress / Done.
+3. Associate the repository with the project (`linkProjectV2ToRepository`).
+4. Add every currently open issue and set Status to Todo.
+5. Write the 12 real project URLs into this table.
 
-- The GitHub CLI (`gh`) in this environment is not logged in:
-  - `gh auth status` → “You are not logged into any GitHub hosts.”
-- Creating and populating Projects (v2) requires authenticated access with appropriate scopes (at least `project` and `read:project`).
-- This run avoids putting secrets into the repo and cannot complete a web-based auth flow.
+Required token: a classic or fine-grained PAT for an org admin / `fabianzimber`, exported as `GH_TOKEN`, with scopes `project`, `read:project`, and `repo`.
 
-## Next steps to unblock (no secrets committed)
-
-Option A — Authenticate `gh` for this Cloud Agent:
-- In Cursor Dashboard → Cloud Agents → Secrets, add `GH_TOKEN` or `GH_ENTERPRISE_TOKEN` with scopes: `project`, `read:project`, and basic repo scopes.
-- Re-run the automation. It will:
-  - Create (or reuse) each org Project (v2)
-  - Associate the repository
-  - Add all open issues into “Todo”
-  - Record each project URL back into this file.
-
-Option B — Run once from your local machine (signed-in user):
-```bash
-gh auth login
-for repo in \
-  birthday-cake-loading voxcpm2-api open-hallucination-index symphony-state circadian-ui \
-  va-dispatcher myosotis what-does-grok-know axiom-llm-training-framework \
-  openai-privacy-filter-api omnisuite npm-package-template
-do
-  # Create or reuse the org Project (v2)
-  # Note: requires gh version that supports Projects v2 commands.
-  if ! gh project list --owner shiftbloom-studio --format json | jq -e \'.[].title=="'"$repo"'"\' >/dev/null; then
-    gh project create --owner shiftbloom-studio --title "$repo"
-  fi
-  # Get project number and ID
-  proj_number=$(gh project list --owner shiftbloom-studio --format json | jq -r \'.[] | select(.title=="'"$repo"'") | .number\')
-  proj_id=$(gh api graphql -f query=\'query($org:String!,$number:Int!){ organization(login:$org){ projectV2(number:$number){ id } } }\' -f org=shiftbloom-studio -F number="$proj_number" --jq \'.data.organization.projectV2.id\')
-  # Add open issues from the repo
-  for issue in $(gh issue list -R shiftbloom-studio/"$repo" --state open --json number -q \'.[].number\'); do
-    gh project item-add --project-id "$proj_id" --url "https://github.com/shiftbloom-studio/$repo/issues/$issue"
-  done
-done
-```
-
-Once authenticated, the automation (or the one-off script) will update this document with the 12 project URLs.
-
+Adding `GH_TOKEN` to Cloud Agent secrets **after this VM booted** does not inject it into this process. This run has no linked Cursor environment (`environment: null`). A new agent run that starts **with** `GH_TOKEN` already configured, or an in-run secret injection, is required. Do not commit the token.
