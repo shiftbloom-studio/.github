@@ -1,51 +1,43 @@
 # Shiftbloom Studio – Projects (v2)
 
-This document tracks one GitHub Projects (v2) board per public product repository.
+One organization-owned GitHub Project (v2) per public product repository. Built-in Status options are **Todo**, **In Progress**, and **Done**. Each board is linked to its repository. Currently open issues were added in **Todo**.
 
-Status: **blocked on auth**. No project URLs are listed because none were created. Do not treat any invented URL as valid.
+Created as `fabianzimber` via GraphQL `createProjectV2` on org owner `shiftbloom-studio`. Existing title matches were reused; no duplicate boards were created.
 
-## Exact auth error
+| Repository | Project | Open issues added (Todo) |
+| --- | --- | --- |
+| [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | [birthday-cake-loading](https://github.com/orgs/shiftbloom-studio/projects/5) | 9 |
+| [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | [voxcpm2-api](https://github.com/orgs/shiftbloom-studio/projects/6) | 7 |
+| [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | [open-hallucination-index](https://github.com/orgs/shiftbloom-studio/projects/7) | 8 |
+| [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | [symphony-state](https://github.com/orgs/shiftbloom-studio/projects/8) | 11 |
+| [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | [circadian-ui](https://github.com/orgs/shiftbloom-studio/projects/9) | 10 |
+| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | [va-dispatcher](https://github.com/orgs/shiftbloom-studio/projects/10) | 6 |
+| [myosotis](https://github.com/shiftbloom-studio/myosotis) | [myosotis](https://github.com/orgs/shiftbloom-studio/projects/11) | 6 |
+| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | [what-does-grok-know](https://github.com/orgs/shiftbloom-studio/projects/12) | 6 |
+| [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | [axiom-llm-training-framework](https://github.com/orgs/shiftbloom-studio/projects/13) | 7 |
+| [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | [openai-privacy-filter-api](https://github.com/orgs/shiftbloom-studio/projects/14) | 7 |
+| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | [omnisuite](https://github.com/orgs/shiftbloom-studio/projects/15) | 5 |
+| [npm-package-template](https://github.com/shiftbloom-studio/npm-package-template) | [npm-package-template](https://github.com/orgs/shiftbloom-studio/projects/16) | 5 |
 
-Checked in this Cloud Agent run (`bc-fff60de3-2771-431c-8db3-da4853e03cc2`):
+## Project URLs
 
-1. `GH_TOKEN` is **not present** in the process environment (`GH_TOKEN` unset, `GITHUB_TOKEN` unset).
-2. `gh` is logged in as the GitHub App integration user `cursor` / GraphQL `viewer.login` = `cursor[bot]`.
-3. `gh project list --owner shiftbloom-studio` succeeds and returns `{"projects":[],"totalCount":0}`.
-4. `gh project create --owner shiftbloom-studio --title birthday-cake-loading` fails with:
+1. https://github.com/orgs/shiftbloom-studio/projects/5
+2. https://github.com/orgs/shiftbloom-studio/projects/6
+3. https://github.com/orgs/shiftbloom-studio/projects/7
+4. https://github.com/orgs/shiftbloom-studio/projects/8
+5. https://github.com/orgs/shiftbloom-studio/projects/9
+6. https://github.com/orgs/shiftbloom-studio/projects/10
+7. https://github.com/orgs/shiftbloom-studio/projects/11
+8. https://github.com/orgs/shiftbloom-studio/projects/12
+9. https://github.com/orgs/shiftbloom-studio/projects/13
+10. https://github.com/orgs/shiftbloom-studio/projects/14
+11. https://github.com/orgs/shiftbloom-studio/projects/15
+12. https://github.com/orgs/shiftbloom-studio/projects/16
 
-```
-GraphQL: cursor[bot] does not have permission to create projects on ownerId O_kgDODST3CQ. (createProjectV2)
-```
+## Notes
 
-That is the same org owner for every repo below. No boards were created. No issue items were added.
-
-## Per-repository status
-
-| Repo | Project URL | Open issues (counted) | Result |
-| --- | --- | --- | --- |
-| [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | — | 9 | Auth/API error: `cursor[bot]` cannot create org projects (`createProjectV2`) |
-| [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | — | 7 | Same org-level `createProjectV2` permission error; not attempted after first failure |
-| [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | — | 8 | Same |
-| [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | — | 11 | Same |
-| [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | — | 8 | Same |
-| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | — | 6 | Same |
-| [myosotis](https://github.com/shiftbloom-studio/myosotis) | — | 6 | Same |
-| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | — | 6 | Same |
-| [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | — | 7 | Same |
-| [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | — | 6 | Same |
-| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | — | 5 | Same |
-| [npm-package-template](https://github.com/shiftbloom-studio/npm-package-template) | — | 5 | Same |
-
-## What still needs to happen (once a user PAT is in *this* VM)
-
-For each repo:
-
-1. Create or reuse an org Project v2 titled exactly after the repo.
-2. Keep the built-in Status field with Todo / In Progress / Done.
-3. Associate the repository with the project (`linkProjectV2ToRepository`).
-4. Add every currently open issue and set Status to Todo.
-5. Write the 12 real project URLs into this table.
-
-Required token: a classic or fine-grained PAT for an org admin / `fabianzimber`, exported as `GH_TOKEN`, with scopes `project`, `read:project`, and `repo`.
-
-Adding `GH_TOKEN` to Cloud Agent secrets **after this VM booted** does not inject it into this process. This run has no linked Cursor environment (`environment: null`). A new agent run that starts **with** `GH_TOKEN` already configured, or an in-run secret injection, is required. Do not commit the token.
+- `birthday-cake-loading` already existed as org project **#5** from an earlier create in this run and was reused.
+- Other listed titles did not exist and were created as **#6–#16**.
+- Unrelated existing org boards (`Server Development`, `BCL Kanban Board`, untitled project) were left alone.
+- `gh project create --owner shiftbloom-studio` failed with `unknown owner type` on this CLI; GraphQL `createProjectV2` / `addProjectV2ItemById` / `linkProjectV2ToRepository` succeeded.
+- No tokens or secrets are stored in this repository.
