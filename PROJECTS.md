@@ -11,7 +11,7 @@ Created as `fabianzimber` via GraphQL `createProjectV2` on org owner `shiftbloom
 | [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | [open-hallucination-index](https://github.com/orgs/shiftbloom-studio/projects/7) | 8 |
 | [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | [symphony-state](https://github.com/orgs/shiftbloom-studio/projects/8) | 11 |
 | [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | [circadian-ui](https://github.com/orgs/shiftbloom-studio/projects/9) | 10 |
-| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | [va-dispatcher](https://github.com/orgs/shiftbloom-studio/projects/10) | 6 |
+| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | [va-dispatcher](https://github.com/orgs/shiftbloom-studio/projects/10) | 7 |
 | [myosotis](https://github.com/shiftbloom-studio/myosotis) | [myosotis](https://github.com/orgs/shiftbloom-studio/projects/11) | 6 |
 | [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | [what-does-grok-know](https://github.com/orgs/shiftbloom-studio/projects/12) | 6 |
 | [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | [axiom-llm-training-framework](https://github.com/orgs/shiftbloom-studio/projects/13) | 7 |
@@ -40,4 +40,5 @@ Created as `fabianzimber` via GraphQL `createProjectV2` on org owner `shiftbloom
 - Other listed titles did not exist and were created as **#6–#16**.
 - Unrelated existing org boards (`Server Development`, `BCL Kanban Board`, untitled project) were left alone.
 - `gh project create --owner shiftbloom-studio` failed with `unknown owner type` on this CLI; GraphQL `createProjectV2` / `addProjectV2ItemById` / `linkProjectV2ToRepository` succeeded.
+- After `GH_TOKEN` was injected into this run, boards were rechecked as `fabianzimber`. One new open issue on `va-dispatcher` was added to project #10. No duplicate projects were created.
 - No tokens or secrets are stored in this repository.
