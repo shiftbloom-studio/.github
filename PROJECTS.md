@@ -1,71 +1,44 @@
 # Shiftbloom Studio – Projects (v2)
 
-This document tracks one GitHub Projects (v2) board per public product repository.
+One organization-owned GitHub Project (v2) per public product repository. Built-in Status options are **Todo**, **In Progress**, and **Done**. Each board is linked to its repository. Currently open issues were added in **Todo**.
 
-Status: Project creation is currently blocked in this environment because the GitHub CLI is not authenticated for the signed-in user, so organization Projects (v2) cannot be created or updated here. See “Next steps” below.
+Created as `fabianzimber` via GraphQL `createProjectV2` on org owner `shiftbloom-studio`. Existing title matches were reused; no duplicate boards were created.
 
-## Per-repository status
+| Repository | Project | Open issues added (Todo) |
+| --- | --- | --- |
+| [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | [birthday-cake-loading](https://github.com/orgs/shiftbloom-studio/projects/5) | 9 |
+| [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | [voxcpm2-api](https://github.com/orgs/shiftbloom-studio/projects/6) | 7 |
+| [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | [open-hallucination-index](https://github.com/orgs/shiftbloom-studio/projects/7) | 8 |
+| [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | [symphony-state](https://github.com/orgs/shiftbloom-studio/projects/8) | 11 |
+| [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | [circadian-ui](https://github.com/orgs/shiftbloom-studio/projects/9) | 10 |
+| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | [va-dispatcher](https://github.com/orgs/shiftbloom-studio/projects/10) | 7 |
+| [myosotis](https://github.com/shiftbloom-studio/myosotis) | [myosotis](https://github.com/orgs/shiftbloom-studio/projects/11) | 6 |
+| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | [what-does-grok-know](https://github.com/orgs/shiftbloom-studio/projects/12) | 6 |
+| [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | [axiom-llm-training-framework](https://github.com/orgs/shiftbloom-studio/projects/13) | 7 |
+| [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | [openai-privacy-filter-api](https://github.com/orgs/shiftbloom-studio/projects/14) | 7 |
+| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | [omnisuite](https://github.com/orgs/shiftbloom-studio/projects/15) | 5 |
+| [npm-package-template](https://github.com/shiftbloom-studio/npm-package-template) | [npm-package-template](https://github.com/orgs/shiftbloom-studio/projects/16) | 5 |
 
-- birthday-cake-loading — Blocked (no org Project v2 created). Open issues: 9
-- voxcpm2-api — Blocked (no org Project v2 created). Open issues: 7
-- open-hallucination-index — Blocked (no org Project v2 created). Open issues: 8
-- symphony-state — Blocked (no org Project v2 created). Open issues: 11
-- circadian-ui — Blocked (no org Project v2 created). Open issues: 8
-- va-dispatcher — Blocked (no org Project v2 created). Open issues: 6
-- myosotis — Blocked (no org Project v2 created). Open issues: 6
-- what-does-grok-know — Blocked (no org Project v2 created). Open issues: 6
-- axiom-llm-training-framework — Blocked (no org Project v2 created). Open issues: 7
-- openai-privacy-filter-api — Blocked (no org Project v2 created). Open issues: 6
-- omnisuite — Blocked (no org Project v2 created). Open issues: 5
-- npm-package-template — Blocked (no org Project v2 created). Open issues: 5
+## Project URLs
 
-## What was intended
+1. https://github.com/orgs/shiftbloom-studio/projects/5
+2. https://github.com/orgs/shiftbloom-studio/projects/6
+3. https://github.com/orgs/shiftbloom-studio/projects/7
+4. https://github.com/orgs/shiftbloom-studio/projects/8
+5. https://github.com/orgs/shiftbloom-studio/projects/9
+6. https://github.com/orgs/shiftbloom-studio/projects/10
+7. https://github.com/orgs/shiftbloom-studio/projects/11
+8. https://github.com/orgs/shiftbloom-studio/projects/12
+9. https://github.com/orgs/shiftbloom-studio/projects/13
+10. https://github.com/orgs/shiftbloom-studio/projects/14
+11. https://github.com/orgs/shiftbloom-studio/projects/15
+12. https://github.com/orgs/shiftbloom-studio/projects/16
 
-For each repository:
-1) Create an organization-owned Project (v2) titled exactly after the repo (e.g., “birthday-cake-loading”).
-2) Ensure the built-in Status field has: Todo, In Progress, Done.
-3) Associate the repository to the project (org-level Projects v2 support host repos).
-4) Add all currently open issues from that repository to the project in “Todo”.
+## Notes
 
-## Why blocked here
-
-- The GitHub CLI (`gh`) in this environment is not logged in:
-  - `gh auth status` → “You are not logged into any GitHub hosts.”
-- Creating and populating Projects (v2) requires authenticated access with appropriate scopes (at least `project` and `read:project`).
-- This run avoids putting secrets into the repo and cannot complete a web-based auth flow.
-
-## Next steps to unblock (no secrets committed)
-
-Option A — Authenticate `gh` for this Cloud Agent:
-- In Cursor Dashboard → Cloud Agents → Secrets, add `GH_TOKEN` or `GH_ENTERPRISE_TOKEN` with scopes: `project`, `read:project`, and basic repo scopes.
-- Re-run the automation. It will:
-  - Create (or reuse) each org Project (v2)
-  - Associate the repository
-  - Add all open issues into “Todo”
-  - Record each project URL back into this file.
-
-Option B — Run once from your local machine (signed-in user):
-```bash
-gh auth login
-for repo in \
-  birthday-cake-loading voxcpm2-api open-hallucination-index symphony-state circadian-ui \
-  va-dispatcher myosotis what-does-grok-know axiom-llm-training-framework \
-  openai-privacy-filter-api omnisuite npm-package-template
-do
-  # Create or reuse the org Project (v2)
-  # Note: requires gh version that supports Projects v2 commands.
-  if ! gh project list --owner shiftbloom-studio --format json | jq -e \'.[].title=="'"$repo"'"\' >/dev/null; then
-    gh project create --owner shiftbloom-studio --title "$repo"
-  fi
-  # Get project number and ID
-  proj_number=$(gh project list --owner shiftbloom-studio --format json | jq -r \'.[] | select(.title=="'"$repo"'") | .number\')
-  proj_id=$(gh api graphql -f query=\'query($org:String!,$number:Int!){ organization(login:$org){ projectV2(number:$number){ id } } }\' -f org=shiftbloom-studio -F number="$proj_number" --jq \'.data.organization.projectV2.id\')
-  # Add open issues from the repo
-  for issue in $(gh issue list -R shiftbloom-studio/"$repo" --state open --json number -q \'.[].number\'); do
-    gh project item-add --project-id "$proj_id" --url "https://github.com/shiftbloom-studio/$repo/issues/$issue"
-  done
-done
-```
-
-Once authenticated, the automation (or the one-off script) will update this document with the 12 project URLs.
-
+- `birthday-cake-loading` already existed as org project **#5** from an earlier create in this run and was reused.
+- Other listed titles did not exist and were created as **#6–#16**.
+- Unrelated existing org boards (`Server Development`, `BCL Kanban Board`, untitled project) were left alone.
+- `gh project create --owner shiftbloom-studio` failed with `unknown owner type` on this CLI; GraphQL `createProjectV2` / `addProjectV2ItemById` / `linkProjectV2ToRepository` succeeded.
+- After `GH_TOKEN` was injected into this run, boards were rechecked as `fabianzimber`. One new open issue on `va-dispatcher` was added to project #10. No duplicate projects were created.
+- No tokens or secrets are stored in this repository.
