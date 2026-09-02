@@ -65,7 +65,7 @@ with anyone who wants to help.
 
 ```
 hamburg · 53.55°n 9.99°e · est. 2024
-mit · cc by-sa 4.0 · funded in the open
+apl2 · cc by-sa 4.0 · funded in the open
 every commit helps something bloom.
 ```
 
