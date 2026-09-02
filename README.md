@@ -25,13 +25,11 @@ with anyone who wants to help.
 
 1. **Open by default** — if it can be public, it is public. Roadmaps, budgets,
    mistakes and merge conflicts: watch it all, from day one.
-2. **A little informal** — we write like people talk. First names, short
-   sentences, no gatekeeping.
-3. **Public good over private gain** — everything we ship is free and open,
+2. **Public good over private gain** — everything we ship is free and open,
    and meant to outlive the people who made it.
-4. **Craft with warmth** — we review code like gardeners, not judges.
-5. **Made by people** — tools are instruments here, never authors.
-6. **Grounded in Hamburg** — direct, humble, weatherproof.
+3. **Craft with warmth** — we review code like gardeners, not judges.
+4. **Made by people** — tools are instruments here, never authors.
+5. **Grounded in Hamburg** — direct, humble, weatherproof.
 
 ## What we grow
 
