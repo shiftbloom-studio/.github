@@ -1,68 +1,72 @@
 <div align="center">
-  <a href="https://shiftbloom.studio">
-    <img src="https://shiftbloom.studio/logo.png" alt="shiftbloom studio logo" width="120" height="120" />
-  </a>
-  
-  <h1>shiftbloom studio.</h1>
-  
-  <p>
-    <strong>art of momentary light. 🌿<br>
-    Unleashing digital possibilities where creativity meets technology.</strong>
-  </p>
 
-  <p>
-    <a href="https://shiftbloom.studio">🌐 Website</a> •
-    <a href="mailto:fabian@shiftbloom.studio">📧 Contact</a> •
-    <a href="https://www.instagram.com/fabians.vision/">📸 Instagram</a>
-  </p>
-  
-  <br />
+# shiftbloom studio.
+
+[![bloomed here.](https://shiftbloom.studio/badge/bloom.svg)](https://shiftbloom.studio)
+
+**BLOOM YOUR CODE. BUILD PUBLIC GOOD.**
+
+shiftbloom studio is an open digital studio based in Hamburg.
+We design, build and maintain digital public good — tools, platforms
+and small acts of infrastructure — commit by commit, in public,
+with anyone who wants to help.
+
+> We're not an agency and not a startup. We're a garden.
+
+[shiftbloom.studio](https://shiftbloom.studio) ·
+[open collective](https://opencollective.com/shiftbloom-studio) ·
+[hello@shiftbloom.studio](mailto:hello@shiftbloom.studio)
+
 </div>
 
 ---
 
-### 👋 Who We Are
+## How we work
 
-Welcome to the open-source hub of **shiftbloom studio.** Based in **Hamburg, Germany**, we are a creative studio that bridges the gap between technical craftsmanship and visual art.
+1. **Open by default** — if it can be public, it is public. Roadmaps, budgets,
+   mistakes and merge conflicts: watch it all, from day one.
+2. **A little informal** — we write like people talk. First names, short
+   sentences, no gatekeeping.
+3. **Public good over private gain** — everything we ship is free and open,
+   and meant to outlive the people who made it.
+4. **Craft with warmth** — we review code like gardeners, not judges.
+5. **Made by people** — tools are instruments here, never authors.
+6. **Grounded in Hamburg** — direct, humble, weatherproof.
 
-We don't just write code; we cultivate ecosystems. Whether it's high-performance web applications, modular software architecture, or visual storytelling through photography — our mission is to transform complex requirements into elegant, scalable solutions.
+## What we grow
 
-> *"Simplicity in communication, excellence in execution."*
-
----
-
-### 🛠️ Our Tech Stack
-
-We build with precision using modern, scalable technologies.
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  
-  <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-</p>
-
----
-
-### 🌱 Open Source Initiatives
-
-We believe in giving back to the developer ecosystem. Here are some of the tools we maintain:
-
-| Project | Description | Tech |
+| Project | One line | Tech |
 | :--- | :--- | :--- |
-| **[birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading)** | 🎂 A capability-adaptive progressive enhancement toolkit for React & Next.js. Loads heavy features only when the device can handle them. | `TypeScript` `React` |
-| **[symphony-state](https://github.com/shiftbloom-studio/symphony-state)** | 🎻 An orchestrator that synchronizes multiple state sources (Server, Client, Local) without creating a "global monster store." | `TypeScript` `State` |
-| **[circadian-ui](https://github.com/shiftbloom-studio/circadian-ui)** | 🌗 A theme system that automatically adjusts colors and contrast based on time of day and user context. | `UI/UX` `React` |
-| **[open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index)** | 🤖 A toolkit for measuring factual consistency and mitigating generation errors in GenAI architectures. | `Python` `AI Safety` |
+| [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | Orchestrates multiple state sources without a monolithic global store | `TypeScript` `React` |
+| [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | Inspectable API + sandbox for detecting and redacting privacy spans | `FastAPI` `Next.js` |
+| [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | REST & streaming API for VoxCPM2 speech, with a Tauri desktop client | `Python` `Tauri` |
+| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | Desktop application implementing k2-fsa/OmniVoice — early stage | `Python` |
+| [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | Experimental claim-centric LLM pretraining | `Python` |
+| [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | Time-aware theming: tokens that shift with dawn, day, dusk, night | `React` `Tailwind` |
+| [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | Live dispatch & ACARS tools for virtual airlines | `Hono` `TypeScript` |
+| [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | Calibrated, evidence-backed fact-checking for LLM outputs | `Python` `AI Safety` |
+| [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | Capability-adaptive progressive enhancement for React + Next.js | `React` `Next.js` |
+| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | Your Grok chat export as an explorable 3D brain — no servers, no tracking | `Three.js` |
 
 ---
 
+## The toolshed
+
+![TypeScript](https://img.shields.io/badge/TypeScript-1A1216?style=flat)
+![Next.js](https://img.shields.io/badge/Next.js-1A1216?style=flat)
+![React](https://img.shields.io/badge/React-1A1216?style=flat)
+![Tailwind](https://img.shields.io/badge/Tailwind-1A1216?style=flat)
+![Python](https://img.shields.io/badge/Python-1A1216?style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-1A1216?style=flat)
+![Three.js](https://img.shields.io/badge/Three.js-1A1216?style=flat)
+![Tauri](https://img.shields.io/badge/Tauri-1A1216?style=flat)
 
 <div align="center">
-  <sub>© 2026 shiftbloom studio. Born with passion in Hamburg ❤️.</sub>
+
+```
+hamburg · 53.55°n 9.99°e · est. 2024
+mit · cc by-sa 4.0 · funded in the open
+every commit helps something bloom.
+```
+
 </div>
