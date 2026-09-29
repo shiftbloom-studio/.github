@@ -37,7 +37,7 @@ with anyone who wants to help.
 
 | Project | One line | Tech |
 | :--- | :--- | :--- |
-| [Petal](https://github.com/shiftbloom-studio/ChatBloom) | Twitch chat overlay for streamers — set up in a minute, runs on Cloudflare | `SolidStart` `Cloudflare` |
+| [Petal](https://github.com/shiftbloom-studio/petal) | Twitch chat overlay for streamers — set up in a minute, runs on Cloudflare | `SolidStart` `Cloudflare` |
 | [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | Orchestrates multiple state sources without a monolithic global store | `TypeScript` `React` |
 | [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | Inspectable API + sandbox for detecting and redacting privacy spans | `FastAPI` `Next.js` |
 | [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | REST & streaming API for VoxCPM2 speech, with a Tauri desktop client | `Python` `Tauri` |
