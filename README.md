@@ -17,7 +17,8 @@ with anyone who wants to help.
 
 [shiftbloom.studio](https://shiftbloom.studio) ·
 [open collective](https://opencollective.com/shiftbloom-studio) ·
-[hello@shiftbloom.studio](mailto:hello@shiftbloom.studio)
+[hi@shiftbloom.studio](mailto:hi@shiftbloom.studio) ·
+[safety@shiftbloom.studio](mailto:safety@shiftbloom.studio) for security and conduct
 
 </div>
 
@@ -32,6 +33,15 @@ with anyone who wants to help.
 3. **Craft with warmth** — we review code like gardeners, not judges.
 4. **Made by people** — tools are instruments here, never authors.
 5. **Grounded in Hamburg** — direct, humble, weatherproof.
+
+## Running now
+
+Two of our tools are live on Cloudflare and free to use.
+
+| App | What it does |
+| :--- | :--- |
+| [grow](https://grow.shiftbloom.studio) | An OBS overlay with a to-do list your Twitch chat can edit. Viewers add tasks with `!task` and finish them with `!done`. [Source](https://github.com/shiftbloom-studio/grow) |
+| [convert](https://convert.shiftbloom.studio) | Turns HEIC photos into JPGs and MOV clips into MP4s. Uploads are deleted after 24 hours, and GIF, WebM and audio files are converted inside your browser. |
 
 ## What we grow
 
@@ -66,7 +76,7 @@ with anyone who wants to help.
 
 ```
 hamburg · 53.55°n 9.99°e · est. 2024
-mit · cc by-sa 4.0 · funded in the open
+agpl-3.0 · cc by-sa 4.0 · funded in the open
 every commit helps something bloom.
 ```
 
