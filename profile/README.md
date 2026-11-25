@@ -36,12 +36,13 @@ with anyone who wants to help.
 
 ## Running now
 
-Two of our tools are live on Cloudflare and free to use.
+Three of our tools are live on Cloudflare and free to use.
 
 | App | What it does |
 | :--- | :--- |
 | [grow](https://grow.shiftbloom.studio) | An OBS overlay with a to-do list your Twitch chat can edit. Viewers add tasks with `!task` and finish them with `!done`. [Source](https://github.com/shiftbloom-studio/grow) |
 | [convert](https://convert.shiftbloom.studio) | Turns HEIC photos into JPGs and MOV clips into MP4s. Uploads are deleted after 24 hours, and GIF, WebM and audio files are converted inside your browser. |
+| [drop](https://drop.shiftbloom.studio) | A file host for screenshots, files, text and short links, built for ShareX. Links can expire, and nobody sees what anyone else uploaded. Uploading needs one of our tokens for now. [Source](https://github.com/shiftbloom-studio/drop) |
 
 ## What we grow
 
