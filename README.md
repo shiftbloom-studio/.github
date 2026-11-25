@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile/bloom.svg" width="88" alt="the shiftbloom bloom — drawn from the construction spec" />
+<img src="profile/bloom.svg" width="88" alt="the shiftbloom bloom - drawn from the construction spec" />
 
 # shiftbloom studio.
 
@@ -9,8 +9,8 @@
 **BLOOM YOUR CODE. BUILD PUBLIC GOOD.**
 
 shiftbloom studio is an open digital studio based in Hamburg.
-We design, build and maintain digital public good — tools, platforms
-and small acts of infrastructure — commit by commit, in public,
+We design, build and maintain digital public good - tools, platforms
+and small acts of infrastructure - commit by commit, in public,
 with anyone who wants to help.
 
 > We're not an agency and not a startup. We're a garden.
@@ -26,13 +26,13 @@ with anyone who wants to help.
 
 ## How we work
 
-1. **Open by default** — if it can be public, it is public. Roadmaps, budgets,
+1. **Open by default** - if it can be public, it is public. Roadmaps, budgets,
    mistakes and merge conflicts: watch it all, from day one.
-2. **Public good over private gain** — everything we ship is free and open,
+2. **Public good over private gain** - everything we ship is free and open,
    and meant to outlive the people who made it.
-3. **Craft with warmth** — we review code like gardeners, not judges.
-4. **Made by people** — tools are instruments here, never authors.
-5. **Grounded in Hamburg** — direct, humble, weatherproof.
+3. **Craft with warmth** - we review code like gardeners, not judges.
+4. **Made by people** - tools are instruments here, never authors.
+5. **Grounded in Hamburg** - direct, humble, weatherproof.
 
 ## Running now
 
@@ -47,17 +47,17 @@ Two of our tools are live on Cloudflare and free to use.
 
 | Project | One line | Tech |
 | :--- | :--- | :--- |
-| [Petal](https://github.com/shiftbloom-studio/petal) | Twitch chat overlay for streamers — set up in a minute, runs on Cloudflare | `SolidStart` `Cloudflare` |
+| [Petal](https://github.com/shiftbloom-studio/petal) | Twitch chat overlay for streamers - set up in a minute, runs on Cloudflare | `SolidStart` `Cloudflare` |
 | [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | Orchestrates multiple state sources without a monolithic global store | `TypeScript` `React` |
 | [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | Inspectable API + sandbox for detecting and redacting privacy spans | `FastAPI` `Next.js` |
 | [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | REST & streaming API for VoxCPM2 speech, with a Tauri desktop client | `Python` `Tauri` |
-| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | Desktop application implementing k2-fsa/OmniVoice — early stage | `Python` |
+| [omnisuite](https://github.com/shiftbloom-studio/omnisuite) | Desktop application implementing k2-fsa/OmniVoice - early stage | `Python` |
 | [axiom-llm-training-framework](https://github.com/shiftbloom-studio/axiom-llm-training-framework) | Experimental claim-centric LLM pretraining | `Python` |
 | [circadian-ui](https://github.com/shiftbloom-studio/circadian-ui) | Time-aware theming: tokens that shift with dawn, day, dusk, night | `React` `Tailwind` |
 | [va-dispatcher](https://github.com/shiftbloom-studio/va-dispatcher) | Live dispatch & ACARS tools for virtual airlines | `Hono` `TypeScript` |
 | [open-hallucination-index](https://github.com/shiftbloom-studio/open-hallucination-index) | Calibrated, evidence-backed fact-checking for LLM outputs | `Python` `AI Safety` |
 | [birthday-cake-loading](https://github.com/shiftbloom-studio/birthday-cake-loading) | Capability-adaptive progressive enhancement for React + Next.js | `React` `Next.js` |
-| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | Your Grok chat export as an explorable 3D brain — no servers, no tracking | `Three.js` |
+| [what-does-grok-know](https://github.com/shiftbloom-studio/what-does-grok-know) | Your Grok chat export as an explorable 3D brain - no servers, no tracking | `Three.js` |
 
 ---
 
