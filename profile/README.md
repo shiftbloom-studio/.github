@@ -31,8 +31,7 @@ with anyone who wants to help.
 2. **Public good over private gain** - everything we ship is free and open,
    and meant to outlive the people who made it.
 3. **Craft with warmth** - we review code like gardeners, not judges.
-4. **Made by people** - tools are instruments here, never authors.
-5. **Grounded in Hamburg** - direct, humble, weatherproof.
+4. **Grounded in Hamburg** - direct, humble, weatherproof.
 
 ## Running now
 
@@ -41,15 +40,18 @@ Four of our tools are live on Cloudflare and free to use.
 | App | What it does |
 | :--- | :--- |
 | [grow](https://grow.shiftbloom.studio) | An OBS overlay with a to-do list your Twitch chat can edit. Viewers add tasks with `!task` and finish them with `!done`. [Source](https://github.com/shiftbloom-studio/grow) |
-| [convert](https://convert.shiftbloom.studio) | Turns HEIC photos into JPGs and MOV clips into MP4s. Uploads are deleted after 24 hours, and GIF, WebM and audio files are converted inside your browser. |
+| [convert](https://convert.shiftbloom.studio) | Turns HEIC photos into JPGs and MOV clips into MP4s. Uploads are deleted after 24 hours, and GIF, WebM and audio files are converted inside your browser. [Source](https://github.com/shiftbloom-studio/convert) |
 | [drop](https://drop.shiftbloom.studio) | A file host for screenshots, files, text and short links, built for ShareX. Links can expire, and nobody sees what anyone else uploaded. Uploading needs one of our tokens for now. [Source](https://github.com/shiftbloom-studio/drop) |
-| [leaf](https://leaf.shiftbloom.studio) | A pastebin that highlights your code on the server. Anonymous pastes are kept for up to 12 hours, and an API token lets you keep them longer. |
+| [leaf](https://leaf.shiftbloom.studio) | A pastebin that highlights your code on the server. Anonymous pastes are kept for up to 12 hours, and an API token lets you keep them longer. [Source](https://github.com/shiftbloom-studio/leaf) |
 
 ## What we grow
 
 | Project | One line | Tech |
 | :--- | :--- | :--- |
 | [Petal](https://github.com/shiftbloom-studio/petal) | Twitch chat overlay for streamers - set up in a minute, runs on Cloudflare | `SolidStart` `Cloudflare` |
+| [stem](https://github.com/shiftbloom-studio/stem) | The sign-in behind our apps - passkeys or an emailed code, no passwords, and OIDC with teams for the apps | `TypeScript` `Cloudflare` |
+| [rhizome](https://github.com/shiftbloom-studio/rhizome) | Long-term memory your AI agents share over MCP, whichever provider they come from | `TypeScript` `Cloudflare` |
+| [field](https://github.com/shiftbloom-studio/field) | Our intranet hub - uptime checks, incidents, admin screens and API tokens for every app | `TypeScript` `Cloudflare` |
 | [symphony-state](https://github.com/shiftbloom-studio/symphony-state) | Orchestrates multiple state sources without a monolithic global store | `TypeScript` `React` |
 | [openai-privacy-filter-api](https://github.com/shiftbloom-studio/openai-privacy-filter-api) | Inspectable API + sandbox for detecting and redacting privacy spans | `FastAPI` `Next.js` |
 | [voxcpm2-api](https://github.com/shiftbloom-studio/voxcpm2-api) | REST & streaming API for VoxCPM2 speech, with a Tauri desktop client | `Python` `Tauri` |
